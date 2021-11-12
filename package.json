@@ -1,14 +1,15 @@
 {
-  "name": "efs_vue",
+  "name": "efs_vuejs",
   "version": "1.0.0",
-  "description": "UI for EFS portfolio project",
-  "author": "instructor",
+  "description": "web front end",
+  "author": "groyce <groyce@unomaha.edu>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+   node.
     "build": "node build/build.js"
   },
+
   "dependencies": {
     "@mdi/font": "^6.4.95",
     "axios": "^0.24.0",
