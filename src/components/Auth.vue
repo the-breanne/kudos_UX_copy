@@ -82,7 +82,6 @@
         username: [
           v => !!v || "Username is required",
           v => (v && v.length > 3) || "A username must be more than 3 characters long",
-          v => /^[a-z0-9_]+$/.test(v) || "A username can only contain letters and digits"
         ],
         password: [
           v => !!v || "Password is required",
