@@ -25,8 +25,14 @@
                 <v-form ref="form" lazy-validation>
                   <v-container>
 
+                    <!--v-text-field
+                    v-model="manager.employee_number"
+                    label="Employee"
+                    required
+                    type="number"
+                    /-->
                     <v-select
-                    v-model="meeting.employee"
+                    v-model="manager.employee"
                     label="Employee Number"
                     :items="list"
                     item-value='pk'
@@ -37,15 +43,12 @@
                     v-model="manager.manager_number"
                     label="Manager Number"
                     required
-                    type="number"
                     />
-
                     <v-text-field
                     v-model="manager.name"
                     label="Name"
                     required
                     />
-
                     <v-text-field
                     v-model="manager.city"
                     label="City"
@@ -55,12 +58,24 @@
                     v-model="manager.state"
                     label="State"
                     required
-                    />
-
+                    />               
                     <v-text-field
                     v-model="manager.email"
                     label="Email"
                     required
+                    />                         
+                    <v-text-field
+                    v-model="manager.created_date"
+                    label="Created Date"
+                    required
+                    type="date"
+                    />
+                    <v-text-field
+                    v-model="manager.updates_date"
+                    label="Updated Date"
+                    required
+                    type="date"
+
                     />
 
 
@@ -68,7 +83,6 @@
                 <v-btn v-if="!isUpdate" class="blue white--text" @click="createManager">Save</v-btn>
                 <v-btn v-if="isUpdate" class="blue white--text" @click="updateManager">Update</v-btn>
                 <v-btn class="white black--text" @click="cancelOperation">Cancel</v-btn>
-
                 </v-form>
               </v-card-text>
             </v-card>
@@ -90,6 +104,7 @@
     components: {},
     data() {
       return {
+        employees: [],
         showError: false,
         manager: {},
         pageTitle: "Add New Manager",
@@ -97,7 +112,33 @@
         showMsg: '',
       };
     },
+    computed:{
+      list:{
+      get () {
+            return this.employees
+        },
+          set (newValue) {
+            this.employees = newValue
+          }
+      }
+    },
     methods: {
+      getEmployees() {
+        apiService.getEmployeeList().then(response => {
+          this.employees = response.data.data;
+          if (localStorage.getItem("isAuthenticates")
+            && JSON.parse(localStorage.getItem("isAuthenticates")) === true) {
+            this.validUserName = JSON.parse(localStorage.getItem("log_user"));
+          }
+        }).catch(error => {
+          if (error.response.status === 401) {
+            localStorage.removeItem('isAuthenticates');
+            localStorage.removeItem('log_user');
+            localStorage.removeItem('token');
+            router.push("/auth");
+          }
+        });
+      },
       createManager() {
         apiService.addNewManager(this.manager).then(response => {
           if (response.status === 201) {
@@ -136,6 +177,7 @@
       }
     },
     mounted() {
+      this.getEmployees();
       if (this.$route.params.pk) {
         this.pageTitle = "Edit Manager";
         this.isUpdate = true;
