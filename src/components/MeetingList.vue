@@ -48,8 +48,8 @@
             >
                     <template v-slot:item="props">
                       <tr>
-                        <td align="left">{{ props.item.employee_number }}</td>
-                        <td align="left">{{ props.item.manager_number }}</td>
+                        <td align="left">{{ props.item.employee }}</td>
+                        <td align="left">{{ props.item.manager }}</td>
                         <td align="left">{{ props.item.subject }}</td>
                         <td nowrap="true" align="left">{{ props.item.comment }}</td>
                         <td nowrap="true" align="left">{{ props.item.requested_date }}</td>
