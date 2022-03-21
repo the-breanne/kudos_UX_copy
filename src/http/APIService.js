@@ -7,16 +7,16 @@ export class APIService {
 
   }
 
-   getCustomer(param_pk) {
-     const url = `${API_URL}/api/customers/${param_pk}`;
+   getEmployee(param_pk) {
+     const url = `${API_URL}/api/employees/${param_pk}`;
      let jwtToken = localStorage.getItem('token');
      console.log(":::jwtToken:::::"+jwtToken);
      const headers = {Authorization: `jwt ${jwtToken}`};
      return axios.get(url, {headers: {Authorization: `jwt ${jwtToken}`}});
   }
 
-   getCustomerList() {
-    const url = `${API_URL}/api/customers/`;
+   getEmployeeList() {
+    const url = `${API_URL}/api/employees/`;
     let jwtToken = localStorage.getItem('token');
     console.log(":::jwtToken:::::"+jwtToken);
     const headers = {Authorization: `jwt ${jwtToken}`};
@@ -24,22 +24,22 @@ export class APIService {
 
   }
 
-  addNewCustomer(customer){
-   const url = `${API_URL}/api/customers/`;
+  addNewEmployee(employee){
+   const url = `${API_URL}/api/employees/`;
    let jwtToken = localStorage.getItem('token');
    const headers = {Authorization: `jwt ${jwtToken}`};
-   return axios.post(url, customer, {headers: headers});
+   return axios.post(url, employee, {headers: headers});
   }
 
-  updateCustomer(customer){
-    const url = `${API_URL}/api/customers/${customer.pk}`;
+  updateEmployee(employee){
+    const url = `${API_URL}/api/employees/${employee.pk}`;
     let jwtToken = localStorage.getItem('token');
     const headers = {Authorization: `jwt ${jwtToken}`};
-    return axios.put(url, customer, {headers: headers});
+    return axios.put(url, employee, {headers: headers});
   }
 
-  deleteCustomer(customer_Pk){
-     const url = `${API_URL}/api/customers/${customer_Pk}`;
+  deleteEmployee(employee_Pk){
+     const url = `${API_URL}/api/employees/${employee_Pk}`;
      let jwtToken = localStorage.getItem('token');
      const headers = {Authorization: `jwt ${jwtToken}`};
      return axios.delete(url, {headers: headers});
