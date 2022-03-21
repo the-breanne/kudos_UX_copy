@@ -7,7 +7,7 @@
             &#8220;Welcome {{validUserName}}!&#8221;
             <footer>
               <small>
-                <em>&mdash;Eagle Financial Services, your Midwest Financial Services Partner.</em>
+                <em>Kudos</em>
               </small>
             </footer>
           </blockquote>
@@ -33,46 +33,40 @@
               <v-row>
                 <v-col>
                   <v-card>
-                    <v-img
-                      :src="require('@/assets/images/customer.jpg')" height="200px">
-                    </v-img>
+
                     <v-card-text>
                       <div class="blue--text text-h6">
-                        Customers
+                        Tasks
                       </div>
                     </v-card-text>
                     <v-card-actions>
-                      <v-btn flat color="orange" @click="viewCustomers">View Details</v-btn>
+                      <v-btn flat color="orange" @click="viewTasks">View Details</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>
                 <v-col>
                   <v-card>
-                     <v-img
-                      :src="require('@/assets/images/nonstock.jpg')" height="200px">
-                    </v-img>
+
                     <v-card-text>
                       <div class="blue--text text-h6">
-                        Investments
+                        Feedback
                       </div>
                     </v-card-text>
                     <v-card-actions>
-                      <v-btn flat color="orange" @click="viewInvestments">View Details</v-btn>
+                      <v-btn flat color="orange" @click="viewFeedback">View Details</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>
                 <v-col>
                   <v-card>
-                    <v-img
-                      :src="require('@/assets/images/stocks.jpg')" height="200px">
-                    </v-img>
+
                     <v-card-text>
                       <div class="blue--text text-h6">
-                        Stocks
+                        Meetings
                       </div>
                     </v-card-text>
                     <v-card-actions>
-                      <v-btn flat color="orange" @click="viewStocks">View Details</v-btn>
+                      <v-btn flat color="orange" @click="viewMeetings">View Details</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>
@@ -97,14 +91,14 @@
       this.getUser();
     },
     methods: {
-      viewCustomers() {
-        router.push('/customer-list');
+      viewFeedback() {
+        router.push('/feedback-list');
       },
-      viewInvestments() {
-        router.push('/investment-list');
+      viewMeetings() {
+        router.push('/meeting-list');
       },
-      viewStocks() {
-        router.push('/stock-list');
+      viewTasks() {
+        router.push('/task-list');
       },
       getUser() {
         if (localStorage.getItem("isAuthenticates")

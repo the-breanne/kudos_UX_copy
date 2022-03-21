@@ -2,13 +2,16 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Auth from '@/components/Auth'
-import CustomerList from '@/components/CustomerList'
-import CustomerCreate from '@/components/CustomerCreate'
-import InvestmentList from '@/components/InvestmentList'
-import InvestmentCreate from '@/components/InvestmentCreate'
-import StockList from '@/components/StockList'
-import StockCreate from '@/components/StockCreate'
-
+import EmployeeList from '@/components/EmployeeList'
+import EmployeeCreate from '@/components/EmployeeCreate'
+import ManagerList from '@/components/ManagerList'
+import ManagerCreate from '@/components/ManagerCreate'
+import FeedbackList from '@/components/FeedbackList'
+import FeedbackCreate from '@/components/FeedbackCreate'
+import MeetingList from '@/components/MeetingList'
+import MeetingCreate from '@/components/MeetingCreate'
+import TaskList from '@/components/TaskList'
+import TaskCreate from '@/components/TaskCreate'
 
 
 Vue.use(Router)
@@ -23,68 +26,107 @@ export default new Router({
       component: Home
     },
     {
-      path: '/customer-list',
-      name: 'CustomerList',
-      component: CustomerList
+      path: '/employee-list',
+      name: 'EmployeeList',
+      component: EmployeeList
     },
     {
-      path: '/customer-list/:msg',
-      name: 'CustomerUpdatedList',
-      component: CustomerList
+      path: '/employee-list/:msg',
+      name: 'EmployeeUpdatedList',
+      component: EmployeeList
     },
     {
-      path: '/customer-create',
-      name: 'CustomerCreate',
-      component: CustomerCreate
+      path: '/employee-create',
+      name: 'EmployeeCreate',
+      component: EmployeeCreate
     },
     {
-      path: '/customer-create/:pk',
-      name: 'CustomerUpdate',
-      component: CustomerCreate
+      path: '/employee-create/:pk',
+      name: 'EmployeeUpdate',
+      component: EmployeeCreate
     },
 
     {
-      path: '/investment-list',
-      name: 'InvestmentList',
-      component: InvestmentList
+      path: '/manager-list',
+      name: 'ManagerList',
+      component: ManagerList
     },
     {
-      path: '/investment-list/:msg',
-      name: 'InvestmentUpdatedList',
-      component: InvestmentList
+      path: '/manager-list/:msg',
+      name: 'ManagerUpdatedList',
+      component: ManagerList
     },
     {
-      path: '/investment-create',
-      name: 'InvestmentCreate',
-      component: InvestmentCreate
+      path: '/manager-create',
+      name: 'ManagerCreate',
+      component: ManagerCreate
     },
     {
-      path: '/investment-create/:pk',
-      name: 'InvestmentUpdate',
-      component: InvestmentCreate
+      path: '/manager-create/:pk',
+      name: 'ManagerUpdate',
+      component: ManagerCreate
     },
 
     {
-      path: '/stock-list',
-      name: 'StockList',
-      component: StockList
+      path: '/feedback-list',
+      name: 'FeedbackList',
+      component: FeedbackList
     },
     {
-      path: '/stock-list/:msg',
-      name: 'StockUpdatedList',
-      component: StockList
+      path: '/feedback-list/:msg',
+      name: 'FeedbackUpdatedList',
+      component: FeedbackList
     },
     {
-      path: '/stock-create',
-      name: 'StockCreate',
-      component: StockCreate
+      path: '/feedback-create',
+      name: 'FeedbackCreate',
+      component: FeedbackCreate
     },
     {
-      path: '/stock-create/:pk',
-      name: 'StockUpdate',
-      component: StockCreate
+      path: '/feedback-create/:pk',
+      name: 'FeedbackUpdate',
+      component: FeedbackCreate
     },
-
+    {
+      path: '/meeting-list',
+      name: 'MeetingList',
+      component: MeetingList
+    },
+    {
+      path: '/meeting-list/:msg',
+      name: 'MeetingUpdatedList',
+      component: MeetingList
+    },
+    {
+      path: '/meeting-create',
+      name: 'MeetingCreate',
+      component: MeetingCreate
+    },
+    {
+      path: '/meeting-create/:pk',
+      name: 'MeetingUpdate',
+      component: MeetingCreate
+    },
+    {
+      path: '/task-list',
+      name: 'TaskList',
+      component: TaskList
+    },
+    {
+      path: '/task-list/:msg',
+      name: 'TaskUpdatedList',
+      component: TaskList
+    },
+    {
+      path: '/task-create',
+      name: 'TaskCreate',
+      component: TaskCreate
+    },
+    {
+      path: '/task-create/:pk',
+      name: 'TaskUpdate',
+      component: TaskCreate
+    },
     {
       path: '/auth',
       name: 'Auth',

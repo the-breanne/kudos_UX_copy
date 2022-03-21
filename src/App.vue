@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app color="blue">
-      <v-toolbar-title >Eagle Finance Services</v-toolbar-title>
+      <v-toolbar-title >Kudos</v-toolbar-title>
       <v-spacer></v-spacer>
       <div class="hidden-xs-only">
         <v-btn
@@ -64,14 +64,16 @@
       dialog: false,
       menu: [
         { title: 'Home', url:"/"},
-        { title: 'Customers', url:"/customer-list" },
-        { title: 'Stocks', url:"/stock-list" },
-        { title: 'Investments', url:"/investment-list" },
+        { title: 'Employees', url:"/employee-list" },
+        { title: 'Managers', url:"/manager-list" },
+        { title: 'Tasks', url:"/task-list" },
+        { title: 'Meetings', url:"/meeting-list" },
+        { title: 'Feedback', url:"/feedback-list" },
       ]
     }),
 
     mounted() {
-      apiService.getCustomerList().then(response => {
+      apiService.getEmployeeList().then(response => {
         this.authenticated = true;
       }).catch(error => {
         if (error.response.status === 401) {
