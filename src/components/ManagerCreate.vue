@@ -25,7 +25,15 @@
                 <v-form ref="form" lazy-validation>
                   <v-container>
 
-                        <v-text-field
+                    <v-select
+                    v-model="meeting.employee"
+                    label="Employee Number"
+                    :items="list"
+                    item-value='pk'
+                    item-text='employee_number'
+                    ></v-select>
+
+                    <v-text-field
                     v-model="manager.manager_number"
                     label="Manager Number"
                     required

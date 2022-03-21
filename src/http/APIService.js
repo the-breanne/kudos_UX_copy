@@ -90,8 +90,8 @@ export class APIService {
        return axios.delete(url, {headers: headers});
     }
   
-  getStock(param_pk) {
-       const url = `${API_URL}/api/stocks/${param_pk}`;
+  getManager(param_pk) {
+       const url = `${API_URL}/api/managers/${param_pk}`;
        let jwtToken = localStorage.getItem('token');
        console.log(":::jwtToken:::::"+jwtToken);
        const headers = {Authorization: `jwt ${jwtToken}`};
@@ -99,8 +99,8 @@ export class APIService {
     }
 
 
-     getStockList() {
-         const url = `${API_URL}/api/stocks`;
+     getManagerList() {
+         const url = `${API_URL}/api/managers`;
          let jwtToken = localStorage.getItem('token');
          console.log(":::jwtToken:::::" + jwtToken);
          const headers = {Authorization: `jwt ${jwtToken}`};
@@ -108,22 +108,22 @@ export class APIService {
 
      }
 
-      addNewStock(stock){
-     const url = `${API_URL}/api/stocks/`;
+      addNewManager(manager){
+     const url = `${API_URL}/api/managers/`;
      let jwtToken = localStorage.getItem('token');
      const headers = {Authorization: `jwt ${jwtToken}`};
-     return axios.post(url, stock, {headers: headers});
+     return axios.post(url, manager, {headers: headers});
     }
 
-    updateStock(stock){
-      const url = `${API_URL}/api/stocks/${stock.pk}`;
+    updateManager(manager){
+      const url = `${API_URL}/api/managers/${manager.pk}`;
       let jwtToken = localStorage.getItem('token');
       const headers = {Authorization: `jwt ${jwtToken}`};
-      return axios.put(url, stock, {headers: headers});
+      return axios.put(url, manager, {headers: headers});
     }
 
-    deleteStock(stock_Pk){
-       const url = `${API_URL}/api/stocks/${stock_Pk}`;
+    deleteManager(manager_Pk){
+       const url = `${API_URL}/api/managers/${manager_Pk}`;
        let jwtToken = localStorage.getItem('token');
        const headers = {Authorization: `jwt ${jwtToken}`};
        return axios.delete(url, {headers: headers});
