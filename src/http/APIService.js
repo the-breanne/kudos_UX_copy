@@ -51,8 +51,8 @@ export class APIService {
     return axios.post(url, credentials);
   }
 
-  getInvestment(param_pk) {
-       const url = `${API_URL}/api/investments/${param_pk}`;
+  getMeeting(param_pk) {
+       const url = `${API_URL}/api/meetings/${param_pk}`;
        let jwtToken = localStorage.getItem('token');
        console.log(":::jwtToken:::::"+jwtToken);
        const headers = {Authorization: `jwt ${jwtToken}`};
@@ -60,8 +60,8 @@ export class APIService {
     }
 
 
-     getInvestmentList() {
-         const url = `${API_URL}/api/investments`;
+     getMeetingList() {
+         const url = `${API_URL}/api/meetings`;
          let jwtToken = localStorage.getItem('token');
          console.log(":::jwtToken:::::" + jwtToken);
          const headers = {Authorization: `jwt ${jwtToken}`};
@@ -69,22 +69,22 @@ export class APIService {
 
      }
 
-      addNewInvestment(investment){
-     const url = `${API_URL}/api/investments/`;
+      addNewMeeting(meeting){
+     const url = `${API_URL}/api/meetings/`;
      let jwtToken = localStorage.getItem('token');
      const headers = {Authorization: `jwt ${jwtToken}`};
-     return axios.post(url, investment, {headers: headers});
+     return axios.post(url, meeting, {headers: headers});
     }
 
-    updateInvestment(investment){
-      const url = `${API_URL}/api/investments/${investment.pk}`;
+    updateMeeting(meeting){
+      const url = `${API_URL}/api/meetings/${meeting.pk}`;
       let jwtToken = localStorage.getItem('token');
       const headers = {Authorization: `jwt ${jwtToken}`};
-      return axios.put(url, investment, {headers: headers});
+      return axios.put(url, meeting, {headers: headers});
     }
 
-    deleteInvestment(investment_Pk){
-       const url = `${API_URL}/api/investments/${investment_Pk}`;
+    deleteMeeting(meeting_Pk){
+       const url = `${API_URL}/api/meetings/${meeting_Pk}`;
        let jwtToken = localStorage.getItem('token');
        const headers = {Authorization: `jwt ${jwtToken}`};
        return axios.delete(url, {headers: headers});
