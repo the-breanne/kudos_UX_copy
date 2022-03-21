@@ -84,20 +84,12 @@
                         <v-divider></v-divider>
 
                         <v-list v-show="isExpanded(item)" dense>
-                          <v-list-item>
-                            <v-list-item-content>Address:</v-list-item-content>
-                                {{ item.city }}
-                                {{ item.state }}
-                            </v-list-item-content>
-                          </v-list-item>
+
                           <v-list-item>
                             <v-list-item-content>Email:</v-list-item-content>
                             <v-list-item-content class="align-end">{{ item.email }}</v-list-item-content>
                           </v-list-item>
-                          <v-list-item>
-                            <v-list-item-content>Cell Phone:</v-list-item-content>
-                            <v-list-item-content class="align-end">{{ item.cell_phone }}</v-list-item-content>
-                          </v-list-item>
+
                         </v-list>
                       </v-card>
                     </v-col>
@@ -129,12 +121,9 @@
       headers: [
         {text: 'Employee Number', sortable: false, align: 'left',},
         {text: 'Name', sortable: false, align: 'left',},
-        {text: 'Address', sortable: false, align: 'left',},
         {text: 'City', sortable: false, align: 'left',},
         {text: 'State', sortable: false, align: 'left',},
-        {text: 'ZipCode', sortable: false, align: 'left',},
         {text: 'Email', sortable: false, align: 'left',},
-        {text: 'Phone', sortable: false, align: 'left',},
         {text: 'Update', sortable: false, align: 'left',},
         {text: 'Delete', sortable: false, align: 'left',}
       ],
