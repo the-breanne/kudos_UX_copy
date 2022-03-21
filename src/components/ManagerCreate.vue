@@ -42,6 +42,7 @@
                     <v-text-field
                     v-model="manager.manager_number"
                     label="Manager Number"
+                    type="number"
                     required
                     />
                     <v-text-field
