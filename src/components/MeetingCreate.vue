@@ -36,7 +36,7 @@
                     label="Employee Number"
                     :items="list"
                     item-value='pk'
-                    item-text='cust_number'
+                    item-text='employee_number'
                     ></v-select>
 
                     <v-select
@@ -49,18 +49,18 @@
 
                     <v-text-field
                     v-model="meeting.subject"
-                    label="Category"
+                    label="Subject"
                     required
                     />
                     <v-text-field
                     v-model="meeting.comment"
-                    label="Description"
+                    label="Comment"
                     required
                     />
 
                     <v-text-field
                     v-model="meeting.requested_date"
-                    label="Acquired_date"
+                    label="Requested Date"
                     required
                     type="date"
 
@@ -68,7 +68,7 @@
 
                     <v-text-field
                     v-model="meeting.created_date"
-                    label="Recent Date"
+                    label="Created Date"
                     required
                     type="date"
                     />
