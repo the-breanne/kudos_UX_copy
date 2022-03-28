@@ -40,7 +40,7 @@
                       </div>
                     </v-card-text>
                     <v-card-actions>
-                      <v-btn flat color="beige" @click="viewTasks">View Details</v-btn>
+                      <v-btn flat color="blue-grey lighten-4" @click="viewTasks">View Details</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>
@@ -53,7 +53,7 @@
                       </div>
                     </v-card-text>
                     <v-card-actions>
-                      <v-btn flat color="beige" @click="viewFeedback">View Details</v-btn>
+                      <v-btn flat color="blue-grey lighten-4" @click="viewFeedback">View Details</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>
@@ -66,7 +66,7 @@
                       </div>
                     </v-card-text>
                     <v-card-actions>
-                      <v-btn flat color="beige" @click="viewMeetings">View Details</v-btn>
+                      <v-btn flat color="blue-grey lighten-4" @click="viewMeetings">View Details</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>
