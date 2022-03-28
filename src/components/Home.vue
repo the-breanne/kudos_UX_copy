@@ -25,7 +25,7 @@
             sm="10"
             md="10"
         >
-          <v-card class="elevation-2">
+
             <v-container
               fluid
               grid-list-md
@@ -35,12 +35,12 @@
                   <v-card>
 
                     <v-card-text>
-                      <div class="blue--text text-h6">
+                      <div class="RosyBrown--text text-h6">
                         Tasks
                       </div>
                     </v-card-text>
                     <v-card-actions>
-                      <v-btn flat color="orange" @click="viewTasks">View Details</v-btn>
+                      <v-btn flat color="OldLace" @click="viewTasks">View Details</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>
@@ -48,12 +48,12 @@
                   <v-card>
 
                     <v-card-text>
-                      <div class="blue--text text-h6">
+                      <div class="RosyBrown--text text-h6">
                         Feedback
                       </div>
                     </v-card-text>
                     <v-card-actions>
-                      <v-btn flat color="orange" @click="viewFeedback">View Details</v-btn>
+                      <v-btn flat color="OldLace" @click="viewFeedback">View Details</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>
@@ -61,18 +61,18 @@
                   <v-card>
 
                     <v-card-text>
-                      <div class="blue--text text-h6">
+                      <div class="RosyBrown--text text-h6">
                         Meetings
                       </div>
                     </v-card-text>
                     <v-card-actions>
-                      <v-btn flat color="orange" @click="viewMeetings">View Details</v-btn>
+                      <v-btn flat color="OldLace" @click="viewMeetings">View Details</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>
               </v-row>
             </v-container>
-          </v-card>
+
         </v-col>
       </v-row>
     </v-container>
