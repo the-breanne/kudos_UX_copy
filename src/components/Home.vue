@@ -35,12 +35,12 @@
                   <v-card>
 
                     <v-card-text>
-                      <div class="RosyBrown--text text-h6">
+                      <div class="black--text text-h6">
                         Tasks
                       </div>
                     </v-card-text>
                     <v-card-actions>
-                      <v-btn flat color="OldLace" @click="viewTasks">View Details</v-btn>
+                      <v-btn flat color="beige" @click="viewTasks">View Details</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>
@@ -48,12 +48,12 @@
                   <v-card>
 
                     <v-card-text>
-                      <div class="RosyBrown--text text-h6">
+                      <div class="black--text text-h6">
                         Feedback
                       </div>
                     </v-card-text>
                     <v-card-actions>
-                      <v-btn flat color="OldLace" @click="viewFeedback">View Details</v-btn>
+                      <v-btn flat color="beige" @click="viewFeedback">View Details</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>
@@ -61,12 +61,12 @@
                   <v-card>
 
                     <v-card-text>
-                      <div class="RosyBrown--text text-h6">
+                      <div class="black--text text-h6">
                         Meetings
                       </div>
                     </v-card-text>
                     <v-card-actions>
-                      <v-btn flat color="OldLace" @click="viewMeetings">View Details</v-btn>
+                      <v-btn flat color="beige" @click="viewMeetings">View Details</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>
