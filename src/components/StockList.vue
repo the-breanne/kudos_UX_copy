@@ -107,7 +107,7 @@
                   </v-row>
                 </template>
               </v-data-iterator>
-              <v-btn class="blue mt-4 white--text" @click="addNewStock">Add Stock</v-btn>
+              <v-btn class="blue-grey darken-2 mt-4 white--text" @click="addNewStock">Add Stock</v-btn>
         </v-col>
       </v-row>
     </v-container>

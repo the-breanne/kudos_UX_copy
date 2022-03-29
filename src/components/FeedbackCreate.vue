@@ -74,8 +74,8 @@
                     />
 
                 </v-container>
-                <v-btn v-if="!isUpdate" class="blue white--text" @click="createFeedback">Save</v-btn>
-                <v-btn v-if="isUpdate" class="blue white--text" @click="updateFeedback">Update</v-btn>
+                <v-btn v-if="!isUpdate" class="blue-grey darken-2 white--text" @click="createFeedback">Save</v-btn>
+                <v-btn v-if="isUpdate" class="blue-grey darken-2 white--text" @click="updateFeedback">Update</v-btn>
                 <v-btn class="white black--text" @click="cancelOperation">Cancel</v-btn>
                 </v-form>
               </v-card-text>

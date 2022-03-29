@@ -57,8 +57,8 @@
 
 
                 </v-container>
-                <v-btn v-if="!isUpdate" class="blue white--text" @click="createEmployee">Save</v-btn>
-                <v-btn v-if="isUpdate" class="blue white--text" @click="updateEmployee">Update</v-btn>
+                <v-btn v-if="!isUpdate" class="blue-grey darken-2 white--text" @click="createEmployee">Save</v-btn>
+                <v-btn v-if="isUpdate" class="blue-grey darken-2 white--text" @click="updateEmployee">Update</v-btn>
                 <v-btn class="white black--text" @click="cancelOperation">Cancel</v-btn>
 
                 </v-form>
