@@ -4,8 +4,7 @@ import Home from '@/components/Home'
 import Auth from '@/components/Auth'
 import EmployeeList from '@/components/EmployeeList'
 import EmployeeCreate from '@/components/EmployeeCreate'
-import ManagerList from '@/components/ManagerList'
-import ManagerCreate from '@/components/ManagerCreate'
+
 import FeedbackList from '@/components/FeedbackList'
 import FeedbackCreate from '@/components/FeedbackCreate'
 import MeetingList from '@/components/MeetingList'
@@ -48,26 +47,6 @@ export default new Router({
       component: EmployeeCreate
     },
 
-    {
-      path: '/manager-list',
-      name: 'ManagerList',
-      component: ManagerList
-    },
-    {
-      path: '/manager-list/:msg',
-      name: 'ManagerUpdatedList',
-      component: ManagerList
-    },
-    {
-      path: '/manager-create',
-      name: 'ManagerCreate',
-      component: ManagerCreate
-    },
-    {
-      path: '/manager-create/:pk',
-      name: 'ManagerUpdate',
-      component: ManagerCreate
-    },
 
     {
       path: '/feedback-list',

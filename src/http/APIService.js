@@ -90,44 +90,7 @@ export class APIService {
        return axios.delete(url, {headers: headers});
     }
   
-  getManager(param_pk) {
-       const url = `${API_URL}/api/managers/${param_pk}`;
-       let jwtToken = localStorage.getItem('token');
-       console.log(":::jwtToken:::::"+jwtToken);
-       const headers = {Authorization: `jwt ${jwtToken}`};
-       return axios.get(url, {headers: {Authorization: `jwt ${jwtToken}`}});
-    }
 
-
-     getManagerList() {
-         const url = `${API_URL}/api/managers`;
-         let jwtToken = localStorage.getItem('token');
-         console.log(":::jwtToken:::::" + jwtToken);
-         const headers = {Authorization: `jwt ${jwtToken}`};
-         return axios.get(url, {headers: headers});
-
-     }
-
-      addNewManager(manager){
-     const url = `${API_URL}/api/managers/`;
-     let jwtToken = localStorage.getItem('token');
-     const headers = {Authorization: `jwt ${jwtToken}`};
-     return axios.post(url, manager, {headers: headers});
-    }
-
-    updateManager(manager){
-      const url = `${API_URL}/api/managers/${manager.pk}`;
-      let jwtToken = localStorage.getItem('token');
-      const headers = {Authorization: `jwt ${jwtToken}`};
-      return axios.put(url, manager, {headers: headers});
-    }
-
-    deleteManager(manager_Pk){
-       const url = `${API_URL}/api/managers/${manager_Pk}`;
-       let jwtToken = localStorage.getItem('token');
-       const headers = {Authorization: `jwt ${jwtToken}`};
-       return axios.delete(url, {headers: headers});
-    }
 
     getMeeting(param_pk) {
       const url = `${API_URL}/api/meetings/${param_pk}`;
