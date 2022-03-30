@@ -3,7 +3,7 @@
     <!-- Welcome title -->
     <v-container fluid>
       <v-row align="center" justify="center">
-        <v-col cols="12" align="center" justify="center">
+        <v-col cols="20" align="center" justify="center">
           <blockquote>
             Welcome {{validUserName}}!
             <footer>
