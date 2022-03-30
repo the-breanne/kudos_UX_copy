@@ -1,6 +1,4 @@
 <template>
-
-<template>
   <v-main>
     <!-- Welcome title -->
     <v-container fluid>
@@ -15,7 +13,7 @@
             </footer>
           </blockquote>
         </v-col>
-        
+
     <div class="container">
         <form @submit.prevent="sendEmail">
           <label>Name</label>
