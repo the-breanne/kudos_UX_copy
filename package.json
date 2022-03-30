@@ -9,10 +9,10 @@
     "start": "npm run build",
     "build": "node build/build.js"
   },
-
   "dependencies": {
     "@mdi/font": "^6.4.95",
     "axios": "^0.24.0",
+    "emailjs-com": "^3.2.0",
     "sweetalert2": "^8.19.0",
     "vue": "^2.5.2",
     "vue-axios": "^2.1.5",
