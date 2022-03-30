@@ -12,7 +12,7 @@ import MeetingList from '@/components/MeetingList'
 import MeetingCreate from '@/components/MeetingCreate'
 import TaskList from '@/components/TaskList'
 import TaskCreate from '@/components/TaskCreate'
-import ContactForm from '@/components/ContactForm'
+import MeetingForm from '@/components/MeetingForm'
 
 
 Vue.use(Router)
@@ -129,9 +129,9 @@ export default new Router({
       component: TaskCreate
     },
     {
-      path: '/contact',
-      name: 'ContactForm',
-      component: ContactForm
+      path: '/meetingform',
+      name: 'MeetingForm',
+      component: MeetingForm
     },
     {
       path: '/auth',

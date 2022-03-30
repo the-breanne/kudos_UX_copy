@@ -69,7 +69,7 @@
         { title: 'Tasks', url:"/task-list" },
         { title: 'Meetings', url:"/meeting-list" },
         { title: 'Feedback', url:"/feedback-list" },
-        { title: 'Contact', url:"/contact" },
+
       ]
     }),
 

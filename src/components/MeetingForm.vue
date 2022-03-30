@@ -1,4 +1,21 @@
 <template>
+
+<template>
+  <v-main>
+    <!-- Welcome title -->
+    <v-container fluid>
+      <v-row align="center" justify="center">
+        <v-col cols="12" align="center" justify="center">
+          <blockquote>
+            Welcome {{validUserName}}!
+            <footer>
+              <small>
+                <em>Kudos</em>
+              </small>
+            </footer>
+          </blockquote>
+        </v-col>
+        
     <div class="container">
         <form @submit.prevent="sendEmail">
           <label>Name</label>
