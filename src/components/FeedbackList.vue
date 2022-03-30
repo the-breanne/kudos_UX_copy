@@ -49,7 +49,6 @@
                     <template v-slot:item="props">
                       <tr>
                         <td align="left">{{ props.item.employee }}</td>
-                        <td align="left">{{ props.item.manager }}</td>
                         <td align="left">{{ props.item.subject }}</td>
                         <td nowrap="true" align="left">{{ props.item.comment }}</td>
                         <td nowrap="true" align="left">{{ props.item.requested_date }}</td>
@@ -123,7 +122,6 @@
       isMobile: false,
       headers: [
         {text: 'Employee Number', sortable: false, align: 'left',},
-        {text: 'Manager Number', sortable: false, align: 'left',},
         {text: 'Subject', sortable: false, align: 'left',},
         {text: 'Comment', sortable: false, align: 'left',},
         {text: 'Requested_Date', sortable: false, align: 'left',},

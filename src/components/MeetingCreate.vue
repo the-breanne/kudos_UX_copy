@@ -39,13 +39,7 @@
                     item-text='employee_number'
                     ></v-select>
 
-                    <v-select
-                    v-model="meeting.manager"
-                    label="Manager Number"
-                    :items="list"
-                    item-value='pk'
-                    item-text='manager_number'
-                    ></v-select>
+
 
                     <v-text-field
                     v-model="meeting.subject"
