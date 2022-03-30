@@ -13,6 +13,7 @@ import MeetingCreate from '@/components/MeetingCreate'
 import TaskList from '@/components/TaskList'
 import TaskCreate from '@/components/TaskCreate'
 import MeetingForm from '@/components/MeetingForm'
+import FeedbackForm from '@/components/FeedbackForm'
 
 
 Vue.use(Router)
@@ -132,6 +133,11 @@ export default new Router({
       path: '/meetingform',
       name: 'MeetingForm',
       component: MeetingForm
+    },
+    {
+      path: '/feedbackform',
+      name: 'FeedbackForm',
+      component: FeedbackForm
     },
     {
       path: '/auth',
