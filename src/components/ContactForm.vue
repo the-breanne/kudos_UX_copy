@@ -8,19 +8,19 @@
             name="name"
             placeholder="Your Name"
           >
-          <label>Email</label>
+          <label>Manager's Email</label>
           <input 
             type="email" 
             v-model="email"
             name="email"
-            placeholder="Your Email"
+            placeholder="Manager's Email"
             >
           <label>Message</label>
           <textarea 
             name="message"
             v-model="message"
             cols="30" rows="5"
-            placeholder="Message">
+            placeholder="Please list the date, time, and description for your requested meeting.">
           </textarea>
           
           <input type="submit" value="Send">
