@@ -1,8 +1,5 @@
 <template>
   <v-main>
-    <!-- Welcome title -->
-    <v-container fluid>
-      <v-row align="center" justify="center">
 
 
     <div class="container">
