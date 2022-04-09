@@ -55,7 +55,7 @@
 
                     <v-text-field
                     v-model="feedback.created_date"
-                    label="Created Date"
+                    label="Feedback Date"
                     required
                     type="date"
                     />

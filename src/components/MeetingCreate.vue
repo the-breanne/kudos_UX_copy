@@ -53,7 +53,7 @@
 
                     <v-text-field
                     v-model="meeting.created_date"
-                    label="Created Date"
+                    label="Meeting Date"
                     required
                     type="date"
                     />

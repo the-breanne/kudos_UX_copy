@@ -123,7 +123,7 @@
         {text: 'Name', sortable: false, align: 'left',},
         {text: "Manager's Name", sortable: false, align: 'left',},
         {text: 'Message', sortable: false, align: 'left',},
-        {text: 'Created Date', sortable: false, align: 'left',},
+        {text: 'Meeting Date', sortable: false, align: 'left',},
         {text: 'Update', sortable: false, align: 'left',},
         {text: 'Delete', sortable: false, align: 'left',}
 
