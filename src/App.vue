@@ -64,7 +64,6 @@
       dialog: false,
       menu: [
         { title: 'Home', url:"/"},
-        { title: 'Employees', url:"/employee-list" },
         { title: 'Tasks', url:"/task-list" },
         { title: 'Meetings', url:"/meeting-list" },
         { title: 'Feedback', url:"/feedback-list" },
