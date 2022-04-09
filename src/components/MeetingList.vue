@@ -48,9 +48,9 @@
             >
                     <template v-slot:item="props">
                       <tr>
-                        <td align="left">{{ props.item.employee }}</td>
-                        <td align="left">{{ props.item.subject }}</td>
-                        <td nowrap="true" align="left">{{ props.item.comment }}</td>
+                        <td align="left">{{ props.item.emp_name }}</td>
+                        <td align="left">{{ props.item.mang_name }}</td>
+                        <td align="left">{{ props.item.message }}</td>
                         <td nowrap="true" align="left">{{ props.item.requested_date }}</td>
                         <td nowrap="true" align="left">{{ props.item.created_date }}</td>
                         <td align="center"><v-icon @click="updateMeeting(props.item)">mdi-pencil</v-icon></td>
@@ -121,9 +121,9 @@
       showMsg: '',
       isMobile: false,
       headers: [
-        {text: 'Employee Number', sortable: false, align: 'left',},
-        {text: 'Subject', sortable: false, align: 'left',},
-        {text: 'Comment', sortable: false, align: 'left',},
+        {text: 'Name', sortable: false, align: 'left',},
+        {text: "Manager's Name", sortable: false, align: 'left',},
+        {text: 'Message', sortable: false, align: 'left',},
         {text: 'Requested_Date', sortable: false, align: 'left',},
         {text: 'Created_Date', sortable: false, align: 'left',},
         {text: 'Update', sortable: false, align: 'left',},

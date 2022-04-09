@@ -25,31 +25,25 @@
                 <v-form ref="form" lazy-validation>
                   <v-container>
 
-                    <!--v-text-field
-                    v-model="feedback.cust_number"
-                    label="Employee"
-                    required
-                    type="number"
-                    /-->
-                    <v-select
-                    v-model="feedback.employee"
-                    label="Employee Number"
-                    :items="list"
-                    item-value='pk'
-                    item-text='employee_number'
-                    ></v-select>
-
 
                     <v-text-field
-                    v-model="feedback.subject"
-                    label="Subject"
+                    v-model="feedback.emp_name"
+                    label="Name"
                     required
                     />
+
                     <v-text-field
-                    v-model="feedback.comment"
-                    label="Comment"
+                    v-model="feedback.mang_name"
+                    label="Manager's Name"
+                    required
+                    />                    
+
+                    <v-text-field
+                    v-model="feedback.message"
+                    label="Message"
                     required
                     />
+
 
                     <v-text-field
                     v-model="feedback.requested_date"

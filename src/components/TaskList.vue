@@ -48,12 +48,10 @@
             >
                     <template v-slot:item="props">
                       <tr>
-                        <td align="left">{{ props.item.employee }}</td>
                         <td align="left">{{ props.item.name }}</td>
                         <td nowrap="true" align="left">{{ props.item.description }}</td>
                         <td nowrap="true" align="left">{{ props.item.priority }}</td>
                         <td nowrap="true" align="left">{{ props.item.deadline }}</td>
-                        <td nowrap="true" align="left">{{ props.item.created_date }}</td>
                         <td align="center"><v-icon @click="updateTask(props.item)">mdi-pencil</v-icon></td>
                         <td align="center"><v-icon @click="deleteTask(props.item)">mdi-delete</v-icon></td>
                       </tr>
@@ -120,12 +118,10 @@
       showMsg: '',
       isMobile: false,
       headers: [
-        {text: 'Employee Number', sortable: false, align: 'left',},
         {text: 'Name', sortable: false, align: 'left',},
         {text: 'Description', sortable: false, align: 'left',},
         {text: 'Priority', sortable: false, align: 'left',},
         {text: 'Deadline', sortable: false, align: 'left',},
-        {text: 'Created_Date', sortable: false, align: 'left',},
         {text: 'Update', sortable: false, align: 'left',},
         {text: 'Delete', sortable: false, align: 'left',}
 

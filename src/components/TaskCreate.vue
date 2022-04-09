@@ -25,20 +25,6 @@
                 <v-form ref="form" lazy-validation>
                   <v-container>
 
-                    <!--v-text-field
-                    v-model="task.cust_number"
-                    label="Employee"
-                    required
-                    type="number"
-                    /-->
-                    <v-select
-                    v-model="task.employee"
-                    label="Employee Number"
-                    :items="list"
-                    item-value='pk'
-                    item-text='employee_number'
-                    ></v-select>
-
                     <v-text-field
                     v-model="task.name"
                     label="Name"
@@ -52,7 +38,7 @@
                     
                     <v-text-field
                     v-model="task.priority"
-                    label="Priority"
+                    label="Priority Number"
                     required
                     type="number"
                     />
@@ -66,12 +52,6 @@
 
                     />
 
-                    <v-text-field
-                    v-model="task.created_date"
-                    label="Created Date"
-                    required
-                    type="date"
-                    />
 
                 </v-container>
                 <v-btn v-if="!isUpdate" class="blue-grey darken-2 white--text" @click="createTask">Save</v-btn>
