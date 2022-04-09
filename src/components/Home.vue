@@ -32,30 +32,19 @@
             >
               <v-row>
                 <v-col>
-                  <v-card>
 
-
-                    <v-card-actions>
                       <v-btn flat color="blue-grey lighten-4" @click="viewTasks">View Tasks</v-btn>
-                    </v-card-actions>
-                  </v-card>
+
                 </v-col>
                 <v-col>
-                  <v-card>
 
-                    <v-card-actions>
                       <v-btn flat color="blue-grey lighten-4" @click="viewMeetings">View Meetings</v-btn>
-                    </v-card-actions>
-                  </v-card>
+
                 </v-col>
                 <v-col>
-                  <v-card>
 
-
-                    <v-card-actions>
                       <v-btn flat color="blue-grey lighten-4" @click="viewFeedbacks">View Feedbacks</v-btn>
-                    </v-card-actions>
-                  </v-card>
+
                 </v-col>
               </v-row>
             </v-container>
