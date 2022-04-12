@@ -67,7 +67,7 @@
       this.getUser();
     },
     methods: {
-      viewFeedback() {
+      viewFeedbacks() {
         router.push('/feedback-list');
       },
       viewMeetings() {
