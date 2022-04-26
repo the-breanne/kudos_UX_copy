@@ -29,8 +29,9 @@
             <v-container
               fluid
               grid-list-md
-              
-            >
+              align="center"
+              justify="center"
+              >
               <v-row 
               align="center"
               justify="center">
