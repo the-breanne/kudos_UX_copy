@@ -29,8 +29,12 @@
             <v-container
               fluid
               grid-list-md
+              
             >
-              <v-row>
+              <v-row 
+              align="center"
+              justify="center">
+                
                 <v-col>
 
                       <v-btn flat color="blue-grey lighten-4" @click="viewTasks">View Tasks</v-btn>
