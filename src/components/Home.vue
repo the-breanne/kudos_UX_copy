@@ -21,7 +21,7 @@
         justify="center"
       >
         <v-col
-          cols="12"
+          cols="20"
             sm="10"
             md="10"
         >
