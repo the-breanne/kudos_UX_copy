@@ -118,7 +118,7 @@
       showMsg: '',
       isMobile: false,
       headers: [
-        {text: 'Name', sortable: false, align: 'left',},
+        {text: 'Task Name', sortable: false, align: 'left',},
         {text: 'Description', sortable: false, align: 'left',},
         {text: 'Priority', sortable: false, align: 'left',},
         {text: 'Deadline', sortable: false, align: 'left',},

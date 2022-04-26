@@ -27,7 +27,7 @@
 
                     <v-text-field
                     v-model="task.name"
-                    label="Name"
+                    label="Task Name"
                     required
                     />
                     <v-text-field
