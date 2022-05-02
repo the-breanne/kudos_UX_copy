@@ -1,5 +1,5 @@
 <template>
-  <v-app app color = "black">
+  <v-app>
     <v-app-bar app color="black black--text">
       <v-toolbar-title >Kudos</v-toolbar-title>
       <v-spacer></v-spacer>
