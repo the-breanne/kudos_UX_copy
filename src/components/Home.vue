@@ -3,12 +3,12 @@
     <v-container fluid>
       <v-row>
         <v-col align="center" justify="center" cols="12">
-          <h1>
+          <h2>
             &#8220;Welcome to Kudos, {{validUserName}}!&#8221;
             <footer>
 
             </footer>
-          </h1>
+          </h2>
         </v-col>
       </v-row>
     </v-container>
