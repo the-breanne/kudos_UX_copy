@@ -4,7 +4,7 @@
       <v-row>
         <v-col align="center" justify="center" cols="12">
           <h2>
-            "Welcome to Kudos, {{validUserName}}""
+            Welcome to Kudos, {{validUserName}}
           </h2>
         </v-col>
       </v-row>
