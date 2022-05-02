@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar>
+    <v-app-bar app color="black black--text">
       <v-toolbar-title >Kudos</v-toolbar-title>
       <v-spacer></v-spacer>
       <div class="hidden-xs-only">
