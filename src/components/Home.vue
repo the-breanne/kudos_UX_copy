@@ -4,10 +4,7 @@
       <v-row>
         <v-col align="center" justify="center" cols="12">
           <h2>
-            &#8220;Welcome to Kudos, {{validUserName}}!&#8221;
-            <footer>
-
-            </footer>
+            "Welcome to Kudos, {{validUserName}}""
           </h2>
         </v-col>
       </v-row>
