@@ -3,14 +3,14 @@
     <v-container fluid>
       <v-row>
         <v-col align="center" justify="center" cols="12">
-          <blockquote>
+          <h1>
             &#8220;Welcome {{validUserName}}!&#8221;
             <footer>
               <small>
                 <em>Kudos</em>
               </small>
             </footer>
-          </blockquote>
+          </h1>
         </v-col>
       </v-row>
     </v-container>
