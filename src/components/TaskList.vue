@@ -4,8 +4,9 @@
     <v-container fluid>
       <v-row align="center" justify="center">
         <v-col cols="12" align="center" justify="center">
-
-          <h4>This is your task list. Here you can view your tasks and add new tasks to your list.</h4>
+          <h3>Task List</h3>
+          <br>
+          <h4>This is your task list. Here you can view your tasks and add new tasks to your list.</h3>
         </v-col>
         <v-col  cols="12" md="10" lg="10" align="center" justify="center">
           <v-alert v-if="showMsg === 'new'"
