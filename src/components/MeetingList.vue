@@ -4,14 +4,9 @@
     <v-container fluid>
       <v-row align="center" justify="center">
         <v-col cols="12" align="center" justify="center">
-          <blockquote>
-            Welcome {{validUserName}}!
-            <footer>
-              <small>
-                <em>Kudos</em>
-              </small>
-            </footer>
-          </blockquote>
+          <h2>Meeting List</h2>
+        
+          <h3>This is your meeting list. Here you can track your upcoming meetings and request new meetings with your manager.</h3>
         </v-col>
         <v-col  cols="12" md="10" lg="10" align="center" justify="center">
           <v-alert v-if="showMsg === 'new'"
