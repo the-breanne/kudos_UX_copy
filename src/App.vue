@@ -1,7 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="black black--text">
-      <v-toolbar-title >Kudos</v-toolbar-title>
+    <v-app-bar app color="teal darken-3">
       <v-spacer></v-spacer>
       <div class="hidden-xs-only">
         <v-btn
