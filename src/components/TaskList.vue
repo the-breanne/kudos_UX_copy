@@ -90,7 +90,7 @@
                   </v-row>
                 </template>
               </v-data-iterator>
-              <v-btn class="blue-grey darken-2 mt-4 white--text" @click="addNewTask">Add Task</v-btn>
+              <v-btn class="teal darken-3 mt-4 white--text" @click="addNewTask">Add Task</v-btn>
         </v-col>
       </v-row>
     </v-container>

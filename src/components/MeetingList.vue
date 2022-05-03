@@ -90,8 +90,8 @@
                   </v-row>
                 </template>
               </v-data-iterator>
-              <v-btn class="blue-grey darken-2 mt-4 white--text" @click="addNewMeeting">Add Meeting</v-btn>
-              <v-btn class="blue-grey darken-2 mt-4 white--text" @click="$router.push('MeetingForm')">Request Meeting</v-btn>
+              <v-btn class="teal darken-3 mt-4 white--text" @click="addNewMeeting">Add Meeting</v-btn>
+              <v-btn class="teal darken-3 mt-4 white--text" @click="$router.push('MeetingForm')">Request Meeting</v-btn>
 
         </v-col>
       </v-row>

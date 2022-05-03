@@ -89,8 +89,8 @@
                   </v-row>
                 </template>
               </v-data-iterator>
-              <v-btn class="blue-grey darken-2 mt-4 white--text" @click="addNewFeedback">Add Feedback</v-btn>
-              <v-btn class="blue-grey darken-2 mt-4 white--text" @click="$router.push('FeedbackForm')">Request Feedback</v-btn>
+              <v-btn class="teal darken-3 mt-4 white--text" @click="addNewFeedback">Add Feedback</v-btn>
+              <v-btn class="teal darken-3 mt-4 white--text" @click="$router.push('FeedbackForm')">Request Feedback</v-btn>
 
         </v-col>
       </v-row>
