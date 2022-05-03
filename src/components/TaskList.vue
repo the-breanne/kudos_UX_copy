@@ -4,14 +4,10 @@
     <v-container fluid>
       <v-row align="center" justify="center">
         <v-col cols="12" align="center" justify="center">
-          <blockquote>
-            Welcome {{validUserName}}!
-            <footer>
-              <small>
-                <em>Kudos</em>
-              </small>
-            </footer>
-          </blockquote>
+          <h2>
+            Welcome to Kudos, {{validUserName}}
+          </h2>
+          <h4>This is your task list. Here you can view your tasks and add new tasks to your list.</h4>
         </v-col>
         <v-col  cols="12" md="10" lg="10" align="center" justify="center">
           <v-alert v-if="showMsg === 'new'"
