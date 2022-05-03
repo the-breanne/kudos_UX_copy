@@ -35,21 +35,21 @@
                 align="center"
                 justify="center">
 
-                      <v-btn flat color="blue-grey lighten-4" @click="viewTasks">View Tasks</v-btn>
+                      <v-btn flat color="teal lighten-4" @click="viewTasks">View Tasks</v-btn>
 
                 </v-col>
                 <v-col
                 align="center"
                 justify="center">
 
-                      <v-btn flat color="blue-grey lighten-4" @click="viewMeetings">View Meetings</v-btn>
+                      <v-btn flat color="teal lighten-4" @click="viewMeetings">View Meetings</v-btn>
 
                 </v-col>
                 <v-col
                 align="center"
                 justify="center">
 
-                      <v-btn flat color="blue-grey lighten-4" @click="viewFeedbacks">View Feedbacks</v-btn>
+                      <v-btn flat color="teal lighten-4" @click="viewFeedbacks">View Feedbacks</v-btn>
 
                 </v-col>
               </v-row>
