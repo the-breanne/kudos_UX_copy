@@ -4,8 +4,8 @@
     <v-container fluid>
       <v-row align="center" justify="center">
         <v-col cols="12" align="center" justify="center">
-          <h3>Task List</h3>
-          <br>
+          <h2>Task List</h2>
+        
           <h4>This is your task list. Here you can view your tasks and add new tasks to your list.</h3>
         </v-col>
         <v-col  cols="12" md="10" lg="10" align="center" justify="center">
