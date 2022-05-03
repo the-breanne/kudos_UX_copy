@@ -6,7 +6,6 @@
         <v-col cols="12" align="center" justify="center">
           <h2>Feedback List</h2>
         
-          <h3>This is your feedback list. Here you can track your feedback reports and request new feedback reports from your manager.</h3>
         </v-col>
         <v-col  cols="12" md="10" lg="10" align="center" justify="center">
           <v-alert v-if="showMsg === 'new'"
